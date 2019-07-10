@@ -1,0 +1,32 @@
+/--# How many works name starts with "vi" ?
+select workerfirstname from worker
+where workerfirstname like 'vi%'
+order by workerfirstname
+
+
+/--# What is the total bonus of workers having bonus date on 2016-02-20  ?
+
+
+
+
+/--# Average Salary of workers joined on 2014-06-11 	?
+select  avg(workersalary),count(*) from worker where workerjoiningdate='06-11-2014';
+
+
+/--# Difference in the salary of all hr and admin ?
+
+SELECT (workersalary),count(*) difference from worker
+ where workerdepartement='hr'and'admin';
+
+
+/--# Delete vivek from table?
+
+delete from worker where workerid=5
+
+
+/--# Change vishal name to vimal ?
+
+update worker set workerfirstname='vimal'
+where workerfirstname='vishal';
+select * from worker
+
